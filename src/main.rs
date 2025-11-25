@@ -90,13 +90,13 @@ fn reverse_complement(seq: &[u8]) -> Vec<u8> {
 #[derive(Parser, Debug)]
 #[command(version, about = "A simple tool to generate random paired-end fastq files.", long_about = None)]
 struct Args {
-    #[arg(short, long, default_value_t = String::from("synthetic_reads"))]
-    outfile: String,
-    
-    #[arg(short, default_value_t = 1000)]
+    #[arg(help = "Number of reads")]
     n: i32,
     
-    #[arg(short = 'l', default_value_t = 150)]
+    #[arg(short, long, default_value_t = String::from("synthetic_reads"),help="File prefix")]
+    outfile: String,    
+    
+    #[arg(short = 'l', default_value_t = 150,help = "Read length.")]
     read_len: i32
 }
 
