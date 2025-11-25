@@ -20,7 +20,7 @@ The tool generates:
 INSTALLATION
 ------------
 
-Prerequisites:
+**Prerequisites:**
 
 You need Rust and Cargo installed. If you use conda/mamba:
 
@@ -30,7 +30,11 @@ You need Rust and Cargo installed. If you use conda/mamba:
 
 Alternatively, install Rust from https://rustup.rs
 
-Build and install:
+**From crates.io**
+
+    cargo install fastqgen
+
+**From Github**
 
     cargo install --path .
 
