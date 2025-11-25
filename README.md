@@ -47,7 +47,7 @@ USAGE
 
 Basic usage:
 
-    fastqgen -n 1000 -l 150 -o my_reads
+    fastqgen generate 1000 -l 150 -o my_reads
 
 Arguments:
 
