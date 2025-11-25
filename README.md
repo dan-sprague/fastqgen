@@ -49,10 +49,13 @@ Basic usage:
 
     fastqgen -n 1000 -l 150 -o my_reads
 
+Arguments:
+
+    <N>    Number of reads.
+
 Options:
 
     -o, --outfile <NAME>    Output file prefix [default: synthetic_reads]
-    -n <NUMBER>             Number of read pairs to generate [default: 1000]
     -l <LENGTH>             Read length in base pairs [default: 150]
     -h, --help              Print help
     -V, --version           Print version
@@ -78,11 +81,7 @@ EXAMPLES
 
 Generate 5000 read pairs of 100bp length:
 
-    fastqgen -n 5000 -l 100 -o test_data
-
-Generate default dataset (1000 reads, 150bp):
-
-    fastqgen
+    fastqgen generate 5000 -l 100
 
 
 LICENSE
